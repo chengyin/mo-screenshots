@@ -14,10 +14,11 @@
     ]
   },
   "permissions": [
+    "activeTab",
     "tabs",
     "storage",
-    "http://*/*",
-    "https://*/*"
+    "downloads",
+    "<all_urls>"
   ],
   "options_ui": {
     "page": "options.html"
@@ -44,5 +45,3 @@
     "default_popup": "popup.html"
   }
 }
-
-

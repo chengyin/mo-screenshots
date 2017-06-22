@@ -1,10 +1,10 @@
 {
   "appName": {
-    "message": "Ext Starter",
+    "message": "MoScreenshots",
     "description": "The name of the extension."
   },
   "appDescription": {
-    "message": "Boilerplate for building cross browser extensions",
+    "message": "All the screenshots",
     "description": "The description of the extension."
   },
   "btnTooltip": {

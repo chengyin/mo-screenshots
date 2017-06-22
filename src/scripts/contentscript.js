@@ -25,9 +25,15 @@ var extractTags = () => {
   return data;
 }
 
+function resize([width, height], cb) {
+  chrome.windows.getCurrent(({id}) => {
+    chrome.windows.update(id, { height, width }, cb);
+  });
+}
+
 function onRequest(request, sender, sendResponse) {
-  if (request.action === 'process-page') {
-    sendResponse(extractTags())
+  if (request.action === 'resize') {
+    resize(request.size, () => { sendResponse(); });
   }
 }
 
